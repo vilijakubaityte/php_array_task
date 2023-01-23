@@ -12,8 +12,7 @@ if (isset($_POST['temp'])) {
     sort($temperatura);
 
 
-
-    $results = $temperatura;
+    $results = array_unique($temperatura);
     sort($results);
     $min = array();
     for ($i = 0; $i<2; $i++) {
@@ -22,7 +21,7 @@ if (isset($_POST['temp'])) {
 
 
 
-    $results = $temperatura;
+    $results = array_unique($temperatura);
     sort($results);
     $first = array_pop($results);
     $second = array_pop($results);
